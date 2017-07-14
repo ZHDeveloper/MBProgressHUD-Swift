@@ -37,8 +37,8 @@ class ViewController: UITableViewController {
         }
         else if indexPath.row == 5 {
             var info: [AnyHashable: Any] = [:]
-//            info[NSLocalizedDescriptionKey] = "RequestError"
-            info[NSLocalizedDescriptionKey] = "java.io.ObjectInputStream$PeekInputStream.readFully(ObjectInputStream.java:2281)"
+            info[NSLocalizedDescriptionKey] = "RequestError"
+//            info[NSLocalizedDescriptionKey] = "java.io.ObjectInputStream$PeekInputStream.readFully(ObjectInputStream.java:2281)"
             let error = NSError(domain: "error", code: 404, userInfo: info)
             /// it will show toast style while text's width more than 120
             showError(error)
