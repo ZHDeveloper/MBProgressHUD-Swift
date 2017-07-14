@@ -76,13 +76,16 @@ public extension ProgressHudProtocol {
         showStatus(.success, text: text, detail: detail, hideAfter: delay)
     }
     
+    /// it will show toast style while text's width more than 120
     public func showError(_ error: Error, hideAfter interval: TimeInterval? = 2) {
         
         let errorDesc = error.localizedDescription
         
-        if errorDesc.characters.count > 6 {
+        let textSize = MB_MULTILINE_TEXTSIZE(errorDesc, font: hudView.labelFont, maxSize: CGSize(width: Double(HUGE), height: Double(HUGE)), mode: .byWordWrapping)
+
+        if textSize.width > 120 {
             let screenHeight = UIScreen.main.bounds.size.height
-            let offset = screenHeight * 0.5 - 100
+            let offset = screenHeight * 0.5 - 150
             showToast(errorDesc, offset: offset, hideAfter: interval)
         }
         else {
