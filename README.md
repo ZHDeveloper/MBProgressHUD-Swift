@@ -1,7 +1,7 @@
 # MBProgressHUD-Swift
 
 前段时间在github上找hud库，有的很炫酷，但不太适合集成在项目中。
-感谢[powfulhong](https://github.com/powfulhong "powfulhong")的项目[MBProgressHUDForSwift](https://github.com/powfulhong/MBProgressHUDForSwift "MBProgressHUDForSwift")。本项目将[MBProgressHUDForSwift](https://github.com/powfulhong/MBProgressHUDForSwift "MBProgressHUDForSwift")更新至swift3.0,并且兼容swift 4。在此基础上进行简单的封装。
+感谢[powfulhong](https://github.com/powfulhong "powfulhong")的项目[MBProgressHUDForSwift](https://github.com/powfulhong/MBProgressHUDForSwift "MBProgressHUDForSwift")。本项目将[MBProgressHUDForSwift](https://github.com/powfulhong/MBProgressHUDForSwift "MBProgressHUDForSwift")更新至swift3.0并且兼容swift4。本项目在此基础上进行简单的封装。
 
 ## 封装
 为UIResponder实现ProgressHudProtocol协议，使用起来更加方便。继承自UIResponder的类，例如UINavigationController、UIViewController、UIView等都可以调用一下方法。当然你也可以为MBProgressHUD自定义view。
