@@ -12,7 +12,7 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationController?.showSuccess(<#T##text: String?##String?#>, detail: <#T##String?#>, hideAfter: <#T##TimeInterval?#>)
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
